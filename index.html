@@ -140,10 +140,11 @@ tr:nth-child(3n) td {
 		position = [0,0];
 		stack=[];
 		for(var i=0;i<9;i++)
-			for(var j=0;j<9;j++)
+			for(var j=0;j<9;j++){
 				tmp = $("#"+i+"_"+j).val();
 				if(tmp=="") tmp="0";
 				data[i][j] = parseInt(tmp);
+			}
 	}
 	var legal = function(val){
 		tmp = new Array(9); 
