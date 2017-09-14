@@ -136,8 +136,10 @@ tr:nth-child(3n) td {
 	stack=[];
 	var erase = function(){
 		for(var i=0;i<9;i++)
-			for(var j=0;j<9;j++)
+			for(var j=0;j<9;j++){
 				$("#"+i+"_"+j).val("");
+				$("#"+i+"_"+j).css("color","black");
+			}
 	}
 	var grab_data = function(){
 		position = [0,0];
